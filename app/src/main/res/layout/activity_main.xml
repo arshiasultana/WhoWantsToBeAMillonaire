@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg1"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:cardCornerRadius="5dp"
+        app:cardElevation="100dp"
+        android:paddingTop="100dp"
+        android:paddingRight="100dp"
+        android:paddingLeft="100dp"
+        android:paddingBottom="100dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="346dp"
+                android:text="Welcome to WHO WANTS TO BE A MILLIONAIRE!!This Game has 10 questions and the winning amount increases at each Question!The Game ends at an incorrect answer! Either you win it all or lose! Click below to start"
+                android:textAlignment="center"
+                android:textColor="#F8F6DD"
+                android:textSize="25dp" />
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/start"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/start" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    
+    
+
+</RelativeLayout>

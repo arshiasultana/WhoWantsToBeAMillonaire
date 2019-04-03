@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".winner"
+    android:background="@drawable/bg1"
+    >
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/win"
+        android:layout_width="433dp"
+        android:layout_height="403dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="184dp"
+        android:src="@drawable/win"
+        app:layout_constraintBottom_toBottomOf="@+id/winner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/congrats"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_below="@+id/win"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/congrats"
+        app:layout_constraintBottom_toTopOf="@+id/winner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="293dp"
+        android:layout_height="96dp"
+        android:layout_below="@id/congrats"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="164dp"
+        android:text="YOU W0N $1,00,0000"
+        android:textAlignment="center"
+        android:textColor="#EECDAA"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="EXIT"
+        android:background="#000"
+        android:textColor="#EECDAA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winner" />
+
+
+</android.support.constraint.ConstraintLayout>
